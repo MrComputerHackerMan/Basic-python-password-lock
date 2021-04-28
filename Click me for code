@@ -1,0 +1,14 @@
+#password ui
+password = input("Set your password ")
+print("Windows is loading...")
+
+#password function 
+def passwordui():
+  user_try = input("Enter your password ")
+  if user_try == password:
+    print("Welcome back")
+  else:
+    print("your password is wrong try again")
+    passwordui()
+
+passwordui()
